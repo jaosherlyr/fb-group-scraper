@@ -1,4 +1,4 @@
-````markdown
+````
 # Facebook Group Scraper + Comment Filter
 
 This repo has a 2-step pipeline:
