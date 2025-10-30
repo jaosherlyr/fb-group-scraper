@@ -1,0 +1,45 @@
+# ---- Local browser stuff ----
+chrome/
+chromedriver/
+.chrome_profile/
+
+# ---- Python ----
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+
+# ---- Editors / OS ----
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# ---- Local env / secrets ----
+.env
+.env.*
+storage_state.json
+
+# ---- Logs (don't commit logs) ----
+log/
+
+# ---- Runtime state (cookies, processed urls, etc.) ----
+state/
+!state/.gitkeep
+# extra explicit so you never commit FB cookies
+state/fb_cookies.json
+
+# ---- Input queue may contain FB links ----
+input/group_post_urls.csv
+# keep folder
+!input/.gitkeep
+# if you have a staff list you WANT to commit:
+!input/group_staff.txt
+
+# ---- Selenium / Playwright caches (optional) ----
+.playwright/
+selenium-manager/
