@@ -1,4 +1,3 @@
-````
 # Facebook Group Scraper + Comment Filter
 
 This repo has a 2-step pipeline:
@@ -240,5 +239,3 @@ ls -l output/
 Scraping Facebook may violate FB’s Terms of Service and/or local laws.
 Use only on groups you are allowed to access, and for research/educational purposes.
 You are responsible for how you use this code.
-
-````
