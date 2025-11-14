@@ -28,7 +28,7 @@ GROUP_URL     = os.getenv("FB_GROUP_URL") or "https://www.facebook.com/groups/90
 USE_MOBILE    = True
 HEADLESS      = False
 
-TARGET_NEW         = 3000       # collect this many NEW (unique) URLs
+TARGET_NEW         = 5000       # collect this many NEW (unique) URLs
 PRE_SCROLL_ROUNDS  = 0          # keep 0; long warmups blow memory
 
 MAX_SCROLLS        = 6000
@@ -52,7 +52,7 @@ POST_PATTERNS = re.compile(r"/posts/|/permalink/|/story\.php\?story_fbid=|/photo
 # 🧯 Memory safety knobs
 PRUNE_KEEP_LAST = 160                # keep only last N articles in DOM
 MAX_ARTICLES_BEFORE_RELOAD = 900     # if DOM grows this big, soft reload
-SOFT_RELOAD_EVERY_SCROLLS = 700      # periodic soft reload cadence
+SOFT_RELOAD_EVERY_SCROLLS = 1000      # periodic soft reload cadence
 
 # ── URL normalization ─────────────────────────────────────────────────────────
 def _strip_query_frag(u: str) -> str:
